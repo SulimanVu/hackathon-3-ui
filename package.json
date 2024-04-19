@@ -1,6 +1,6 @@
 {
-  "name": "hackathon",
-  "version": "1.0.12",
+  "name": "gentlemen-ui-kit",
+  "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
   "scripts": {

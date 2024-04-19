@@ -12,7 +12,7 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: dist,
-    library: 'hackathon',
+    library: 'gentlemen-ui',
     libraryTarget: 'umd',
     umdNamedDefine: true,
     clean: true,

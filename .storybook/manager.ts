@@ -3,7 +3,7 @@ import { create } from '@storybook/theming';
 
 const theme = create({
   base: 'light',
-  brandTitle: 'HACKATHON Storybook',
+  brandTitle: 'gentlemen-ui Storybook',
 });
 
 addons.setConfig({
