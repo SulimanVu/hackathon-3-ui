@@ -1,0 +1,64 @@
+.status {
+  border-radius: 24px;
+  font-weight: 450;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  span {
+    margin: 0 !important;
+    cursor: default;
+  }
+  &.small {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    gap: 2px;
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  &.middle {
+    font-size: 12px;
+    padding: 0 8px;
+    gap: 4px;
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  &.large {
+    font-size: 12px;
+    padding: 2px 12px;
+    gap: 4px;
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  &.draft {
+    color: #30303d;
+    background: #f4f4f6;
+  }
+  &.inProgress {
+    color: #4364a6;
+    background-color: #5e7bb51a;
+  }
+  &.completed {
+    color: #b58b2b;
+    background-color: #be98411f;
+  }
+  &.agreed {
+  }
+  &.rejected {
+  }
+  &.notes {
+  }
+}
+
+:global {
+  .ant-col {
+    padding: 0;
+  }
+}

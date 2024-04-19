@@ -1,0 +1,54 @@
+.Popover {
+  &.default {
+  }
+
+  &.primary {
+    bottom: 0;
+    right: 0;
+
+    :global {
+      .ant-popover-content {
+        position: absolute;
+        right: 0;
+        top: 35px;
+      }
+
+      .ant-popover-inner {
+        position: relative;
+        border-top-right-radius: 0;
+        border: 0.5px solid rgba(97, 97, 122, 0.24);
+      }
+
+      .ant-popover-arrow {
+        display: none;
+      }
+    }
+  }
+}
+
+.wrapperPopover {
+  padding: 10px;
+
+  background: rgba(97, 97, 122, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.subContent {
+  box-sizing: border-box;
+
+  border-radius: 6px 6px 0px 0px;
+  border-top: 0.5px solid rgba(97, 97, 122, 0.24);
+  border-right: 0.5px solid rgba(97, 97, 122, 0.24);
+  border-left: 0.5px solid rgba(97, 97, 122, 0.24);
+
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+
+  bottom: 100%;
+  right: -0.5px;
+  padding: 4px;
+  background: rgba(97, 97, 122, 0.08);
+}

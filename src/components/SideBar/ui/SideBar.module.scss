@@ -1,0 +1,109 @@
+:global {
+  .ant-menu-item {
+    padding: 0 12px 0 !important;
+  }
+
+  .ant-layout-sider-children {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  .ant-btn-text {
+    &:not(:disabled):not(.ant-btn-disabled):hover {
+      background: none;
+      box-shadow: none;
+    }
+  }
+
+  .ant-menu-item-selected {
+    svg * {
+      fill: #b58b2b;
+    }
+  }
+}
+
+.sider {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+  border-right: var(--Stroke-stroke05, 0.5px) solid
+    var(--stroke-stroke-border-divider, rgba(18, 18, 18, 0.16));
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 23px;
+  border-bottom: var(--Stroke-stroke05, 0.5px) solid
+    var(--stroke-stroke-border-divider, rgba(18, 18, 18, 0.16));
+  backdrop-filter: blur(32px);
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.btnCollapsed {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  outline: none;
+  box-sizing: border-box;
+  height: 48px;
+  width: 100%;
+}
+
+.iconLogoDogma {
+  svg {
+    width: 85px;
+    height: 15px;
+  }
+}
+
+.menuWrapper {
+  padding: 12px;
+  padding-bottom: 24px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(18, 18, 18, 0.16) transparent;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+  }
+  .previousPage {
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.08);
+    }
+    span {
+      word-break: normal;
+    }
+  }
+}
+
+.triggerWrapper {
+  padding-left: 23px;
+  border-top: var(--Stroke-stroke05, 0.5px) solid
+    var(--stroke-stroke-border-divider, rgba(18, 18, 18, 0.16));
+  box-shadow: none;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+  }
+}

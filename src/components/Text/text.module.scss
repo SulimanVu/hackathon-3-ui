@@ -1,0 +1,42 @@
+@import '@/styles/fontSizes.scss';
+@import '@/styles/theme.scss';
+
+.text {
+}
+
+.extra-small {
+  font-size: $extra-small-fs;
+  line-height: $extra-small-lh;
+}
+
+.base {
+  font-size: $base-fs;
+  line-height: $base-lh;
+}
+.small {
+  font-size: $small-fs;
+  line-height: $small-lh;
+}
+.large {
+  font-size: $large-fs;
+  line-height: $large-lh;
+}
+.extra-large {
+  font-size: $extra-large-fs;
+  line-height: $extra-large-lh;
+}
+.regular {
+  font-weight: $regular;
+}
+.medium {
+  font-weight: $medium;
+}
+.bold {
+  font-weight: $bold;
+}
+
+@each $colorName, $hex in $theme-colors {
+  .text_color_#{$colorName} {
+    color: $hex;
+  }
+}

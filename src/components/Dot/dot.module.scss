@@ -1,0 +1,15 @@
+@import '@/styles/theme.scss';
+
+.dotBlock {
+  display: grid;
+  place-items: center;
+  .dot {
+    border-radius: 100%;
+  }
+}
+
+@each $colorName, $hex in $theme-colors {
+  .color_#{$colorName} {
+    background-color: $hex;
+  }
+}

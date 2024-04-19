@@ -1,0 +1,11 @@
+.headerAndContent {
+  width: 100%;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.content {
+  width: 100%;
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+}

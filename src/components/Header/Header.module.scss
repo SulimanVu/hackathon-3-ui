@@ -1,0 +1,14 @@
+@use '@/styles/colors.scss';
+
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  background: colors.getThemeColor('white100');
+  border-bottom: 0.5px solid rgba(97, 97, 122, 0.24);
+  height: 64px;
+  padding: 0 24px;
+}

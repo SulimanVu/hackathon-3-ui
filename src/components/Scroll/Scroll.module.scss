@@ -1,0 +1,7 @@
+@import '@/styles/theme.scss';
+
+:global {
+  .rcs-inner-handle {
+    background-color: getThemeColor('brand100') !important;
+  }
+}

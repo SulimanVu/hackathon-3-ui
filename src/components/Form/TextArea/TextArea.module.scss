@@ -1,0 +1,23 @@
+.textAreaWrapper {
+  border: 0.5px solid var(--Stroke-Normal-Hover, rgba(190, 152, 65, 0.72));
+  box-shadow: none;
+
+  &:hover {
+    border: 0.5px solid var(--Stroke-Normal-Hover, rgba(190, 152, 65, 0.72));
+    box-shadow: none;
+  }
+
+  &:focus {
+    border: 0.5px solid var(--Stroke-Normal-Hover, rgba(190, 152, 65, 0.72));
+    box-shadow: none;
+  }
+
+  .textArea {
+    padding: 6px 12px;
+  }
+
+  .count {
+    color: var(--Text-Neutral-Placeholder, rgba(18, 18, 18, 0.3));
+    font: var(--font-s);
+  }
+}

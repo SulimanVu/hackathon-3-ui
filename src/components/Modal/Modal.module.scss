@@ -1,0 +1,46 @@
+@import '@/styles/theme.scss';
+
+.modal {
+  &_bordered {
+    :global {
+      .ant-modal {
+        &-header {
+          border-bottom: 1px solid #d7d7d7;
+        }
+        &-footer {
+          border-top: 1px solid #d7d7d7;
+        }
+      }
+    }
+  }
+}
+
+:global {
+  .ant-modal {
+    &-content {
+      padding: 0 !important;
+    }
+    &-body {
+      padding: 16px 24px !important;
+    }
+    &-header {
+      margin-bottom: 0 !important;
+      padding: 16px 24px !important;
+    }
+    &-footer {
+      margin-top: 0 !important;
+      padding: 16px 24px !important;
+    }
+  }
+}
+
+.title {
+  margin-bottom: 4px !important;
+}
+
+.description {
+  font-weight: 450;
+  letter-spacing: -2%;
+  margin: 0;
+  color: getThemeColor('textNeutralSecondary');
+}

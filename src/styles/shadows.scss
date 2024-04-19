@@ -1,0 +1,9 @@
+@mixin boxThemeShadowL($startOpacity: 0.08, $endOpacity: 0.03) {
+  box-shadow:
+    0px 12px 16px -4px rgba(16, 24, 40, $startOpacity),
+    0px -16px 16px -12px rgba(16, 24, 40, $endOpacity);
+}
+
+@mixin boxThemeShadow2XL($opacity: 0.14) {
+  box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, $opacity);
+}

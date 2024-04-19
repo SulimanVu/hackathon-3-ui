@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'TT Dogma';
+  font-weight: 400;
+  font-style: normal;
+  src:
+    url('./normal/TTDogma-Normal.woff2') format('woff2'),
+    url('./normal/TTDogma-Normal.woff') format('woff'),
+    url('./normal/TTDogma-Normal.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TT Dogma';
+  font-weight: 500;
+  font-style: normal;
+  src:
+    url('./medium/TTDogma-Md.woff2') format('woff2'),
+    url('./medium/TTDogma-Md.woff') format('woff'),
+    url('./medium/TTDogma-Md.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TT Dogma';
+  font-weight: 600;
+  font-style: normal; 
+  src:
+    url('./bold/TTDogma-Bd.woff2') format('woff2'),
+    url('./bold/TTDogma-Bd.woff') format('woff'),
+    url('./bold/TTDogma-Bd.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TT Dogma';
+  font-weight: 700;
+  font-style: normal;
+  src:
+    url('./bold/TTDogma-Bd.woff2') format('woff2'),
+    url('./bold/TTDogma-Bd.woff') format('woff'),
+    url('./bold/TTDogma-Bd.ttf') format('truetype');
+}

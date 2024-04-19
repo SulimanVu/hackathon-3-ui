@@ -1,0 +1,101 @@
+$theme-colors: (
+  // Brand
+  brand12: #f7f2e8,
+  brand24: #f0e6d2,
+  brand72: #d0b476,
+  brand100: #be9841,
+  brand105: #b58b2b,
+  brand110: #99752c,
+  brand120: #906b1f,
+  // Red
+  red10: #faeeed,
+  red25: #f1d3d1,
+  red50: #e4a7a4,
+  red75: #d77c77,
+  red100: #ca504a,
+  red110: #ad403e,
+  red120: #9c3533,
+  // Blue
+  blue10: #eff2f8,
+  blue25: #d6deec,
+  blue50: #aebcda,
+  blue75: #869cc8,
+  blue100: #5e7bb5,
+  blue110: #4364a6,
+  blue120: #3b5994,
+  // Light Blue
+  lightBlue10: #eef6fa,
+  lightBlue20: #dcedf5,
+  lightBlue40: #badbeb,
+  lightBlue60: #97c8e0,
+  lightBlue80: #75b6d6,
+  lightBlue100: #52a4cc,
+  lightBlue120: #3f8eb5,
+  // Green
+  green10: #eff9f4,
+  green25: #d5ede3,
+  green50: #acdcc7,
+  green75: #ceebdf,
+  green100: #5aba91,
+  green110: #3ea278,
+  green120: #338f68,
+  // Pink
+  pink10: #faeef3,
+  pink20: #f5dce7,
+  pink40: #ebbacf,
+  pink60: #e097b7,
+  pink80: #d6759f,
+  pink100: #cc5287,
+  pink120: #bc4277,
+  // Purple
+  purple10: #f4effb,
+  purple20: #e9def6,
+  purple40: #d2beed,
+  purple60: #bc9de5,
+  purple80: #a57ddc,
+  purple100: #8f6cbe,
+  purple120: #7e4ac2,
+  // Orange
+  orange15: #fcefdd,
+  orange25: #f5ce98,
+  orange45: #f5ce98,
+  orange65: #f1b96a,
+  orange80: #eda948,
+  orange100: #e9931a,
+  orange120: #d67d01,
+  // Yellow
+  yellow15: #faf5dc,
+  yellow25: #f5ecba,
+  yellow45: #f1e297,
+  yellow65: #ead569,
+  yellow80: #e5cc46,
+  yellow100: #dfbf18,
+  yellow120: #c7a700,
+  // Lime
+  lime15: #ebf4e3,
+  lime25: #deecd0,
+  lime45: #c3ddab,
+  lime65: #afd28f,
+  lime80: #95c369,
+  lime100: #7ab444,
+  lime120: #679f33,
+  // White
+  white45: #f9f9fb,
+  white65: #e8e8ed,
+  white100: #fff,
+  // Black
+  black100: #000,
+
+  // Text
+  textNeutralSecondary: #61617a,
+  textNeutralPlaceholder: #bcbcca,
+  textNeutralPrimary: #30303d,
+  textNeutralDisabled: #9999b1,
+
+  // Icon
+  iconNeutralPrimary: #30303d
+);
+
+@function getThemeColor($colorKey, $opacity: 1) {
+  @return rgba(map-get($theme-colors, $colorKey), $opacity);
+}

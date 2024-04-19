@@ -1,0 +1,23 @@
+@import '@/styles/theme.scss';
+
+.serviceIcon {
+  background: getThemeColor('white100');
+  display: inline-flex;
+  min-width: 32px;
+  min-height: 32px;
+  padding: 5px 3px 3px 3px;
+  @include boxThemeShadowL();
+  border-radius: getThemeRadius('sm');
+
+  & .icon {
+    & path {
+      fill-opacity: 1;
+    }
+    mask-image: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.8240546218487395) 76%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+}

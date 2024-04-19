@@ -1,0 +1,118 @@
+.slider {
+  width: 100%;
+  padding-block: 0;
+  height: 8px;
+
+  :global {
+    .ant-slider-rail {
+      height: 8px;
+      border-radius: 4px;
+      background: 'var(--Surface-Neutral-Bg-12, rgba(18, 18, 18, 0.12))',
+    }
+
+    .ant-slider-track {
+      height: 8px;
+      border-radius: 4px;
+      background: 'var(--Surface-Brand-General, #BE9841)',
+    }
+
+    .ant-slider-step {
+    }
+
+    .ant-slider-handle {
+      inset-block: 0;
+      // top: calc(-50% + 8px);
+      top: calc(-50% - 4px);
+      left: 0;
+      // transform: translateY(calc(50% + 8px));
+
+      width: 24px;
+      height: 24px;
+
+      &::before,
+      &::after {
+        inset-block: 0;
+        width: 24px;
+        height: 24px;
+      }
+
+      &::after {
+        inset-block: 0;
+      }
+
+      &:active {
+        &::before,
+        &::after {
+          inset-block: 0;
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      &:focus {
+        &::before,
+        &::after {
+          inset-block: 0;
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      &:hover {
+        &::before,
+        &::after {
+          inset-block: 0;
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      //   &::before {
+      //     height: 24px;
+      //     width: 24px;
+      //   }
+      //   &::after {
+      //     border: 1px solid var(--Surface-Brand-General, #be9841);
+      //     box-shadow: none;
+      //     inset-block-start: 6px;
+      //     height: 24px;
+      //     width: 24px;
+      //   }
+      //   &:hover::before {
+      //     height: 24px;
+      //     width: 24px;
+      //     inset-block-start: 6px;
+      //     inset-inline-start: 0;
+      //   }
+      //   &:hover::after {
+      //     height: 24px;
+      //     width: 24px;
+      //     box-shadow: none;
+      //     inset-block-start: 6px;
+      //     inset-inline-start: 0;
+      //   }
+
+      //   &:active::before {
+      //     height: 24px;
+      //     width: 24px;
+      //     inset-block-start: 6px;
+      //     inset-inline-start: 0px;
+      //   }
+
+      //   &:active::after {
+      //     height: 24px;
+      //     width: 24px;
+      //     inset-block-start: 6px;
+      //     inset-inline-start: 1px;
+      //   }
+
+      //   &:focus::after {
+      //     height: 24px;
+      //     width: 24px;
+      //     inset-block-start: 6px;
+      //     inset-inline-start: 1px;
+      //   }
+      // }
+    }
+  }
+}

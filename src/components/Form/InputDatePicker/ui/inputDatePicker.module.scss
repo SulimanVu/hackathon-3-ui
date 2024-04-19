@@ -1,0 +1,51 @@
+@use '@/styles/colors.scss';
+
+.dateInput {
+}
+.rangePicker {
+}
+
+:global {
+  .ant-picker-header-view {
+    color: colors.getThemeColor('brand105');
+    .ant-picker-month-btn {
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+  .ant-picker-cell-disabled {
+    &::before {
+      background: #fff !important;
+    }
+    .ant-picker-cell-inner {
+      color: colors.getThemeColor('textNeutralDisabled');
+    }
+  }
+  .ant-picker-cell,
+  .ant-picker-cell-in-view {
+    color: colors.getThemeColor('textNeutralSecondary') !important;
+    transition: 0.02s;
+    &.ant-picker-cell-today:not(.ant-picker-cell-range-start) {
+      background-color: silver;
+      border: none;
+      border-radius: 100%;
+      .ant-picker-cell-inner::before {
+        border: none !important;
+      }
+    }
+  }
+  .ant-picker-cell-range-start,
+  .ant-picker-cell-range-end {
+    border-radius: 100%;
+    background-color: colors.getThemeColor('brand100');
+    .ant-picker-cell-inner {
+      background-color: colors.getThemeColor('brand100');
+    }
+  }
+  .ant-picker-cell-in-range:not(.ant-picker-cell-disabled):before,
+  .ant-picker-cell-range-start:not(.ant-picker-cell-disabled):before,
+  .ant-picker-cell-range-end:not(.ant-picker-cell-disabled):before {
+    background-color: colors.getThemeColor('brand100', 24);
+  }
+}

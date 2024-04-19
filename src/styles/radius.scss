@@ -1,0 +1,8 @@
+$theme-radius: (
+  sm: 8px,
+  lg: 12px,
+);
+
+@function getThemeRadius($radiusKey) {
+  @return map-get($theme-radius, $radiusKey);
+}

@@ -1,0 +1,31 @@
+@use '@/styles/colors.scss';
+@import '@/styles/fontSizes.scss';
+
+.collapse {
+  :global {
+    .ant-collapse-header-text {
+      font-size: $base-fs;
+      font-weight: $bold;
+    }
+    .ant-collapse-content-box {
+      padding: 16px 0px !important;
+      background-color: colors.getThemeColor('white45');
+    }
+    .ant-collapse-item-disabled {
+      background-color: #e8e8ed;
+      span {
+        color: #9999b1;
+      }
+    }
+  }
+  &.borderless {
+    :global {
+      .ant-collapse-header {
+        border-bottom: 0.5px solid #61617a3d;
+      }
+      .ant-collapse-content-box {
+        border-bottom: 0.5px solid #61617a3d;
+      }
+    }
+  }
+}

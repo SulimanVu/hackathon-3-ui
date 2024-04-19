@@ -1,0 +1,33 @@
+@import '@/styles/theme.scss';
+
+.formItem {
+  &_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    :global {
+      .ant-form-item-label label {
+        font-size: 14px;
+        font-weight: 450;
+        line-height: 16px;
+        color: getThemeColor('textNeutralSecondary');
+      }
+    }
+  }
+  &_vertical {
+    :global {
+      .ant-form-item-label label {
+        &::after {
+          // display: none;
+        }
+      }
+      .ant-row {
+        flex-direction: column;
+        width: 100%;
+        .ant-col {
+          text-align: start;
+        }
+      }
+    }
+  }
+}

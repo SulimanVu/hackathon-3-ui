@@ -1,0 +1,24 @@
+@use '@/styles/colors.scss';
+@import '@/styles/fontSizes.scss';
+
+.segmented {
+  width: 100%;
+  padding: 4px;
+  font-size: $base-fs;
+  font-weight: $medium;
+  :global {
+    .ant-segmented-group {
+      display: flex;
+      gap: 4px;
+      width: 100%;
+    }
+    .ant-segmented-item {
+      width: 100%;
+    }
+    .ant-segmented-item-selected {
+      .ant-segmented-item-label {
+        color: colors.getThemeColor('brand110');
+      }
+    }
+  }
+}

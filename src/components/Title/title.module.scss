@@ -1,0 +1,38 @@
+@import '@/styles/fontSizes.scss';
+
+.title {
+  margin: 0;
+}
+
+:global {
+  .ant-col {
+    h1 {
+      font-size: $h1-fs;
+      line-height: $h1-lh;
+    }
+    h2 {
+      font-size: $h2-fs;
+      line-height: $h2-lh;
+    }
+    h3 {
+      font-size: $h3-fs;
+      line-height: $h3-lh;
+    }
+    h4 {
+      font-size: $h4-fs;
+      line-height: $h4-lh;
+    }
+    h5 {
+      font-size: $h5-fs;
+      line-height: $h5-lh;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-weight: $bold;
+      margin: 0;
+    }
+  }
+}

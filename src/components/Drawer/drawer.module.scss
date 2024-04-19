@@ -1,0 +1,7 @@
+.iconDisabled {
+  :global {
+    .ant-drawer-close {
+      display: none;
+    }
+  }
+}

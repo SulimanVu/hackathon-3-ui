@@ -1,0 +1,24 @@
+@import '@/styles/theme.scss';
+
+.activeService {
+  cursor: pointer;
+  &:hover:not(.activeService_isActive) {
+    .title {
+      color: getThemeColor('textNeutralSecondary');
+    }
+  }
+  &_isActive {
+    & .title {
+      color: getThemeColor('brand100');
+    }
+
+    & .serviceIcon span {
+      color: getThemeColor('brand100') !important;
+    }
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 14px;
+}
