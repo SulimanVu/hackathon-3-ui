@@ -5,7 +5,7 @@ import cn from 'classnames';
 
 import { MenuItem } from '../types';
 
-import { Scroll, Button, Icon, Text } from '@/components';
+import { Scroll, Button, Icon, Text, Title } from '@/components';
 
 import styles from './SideBar.module.scss';
 
@@ -39,11 +39,14 @@ export const SideBar = memo(({ previousPage, initCollapsed = false, ...props }: 
       style={{ background: 'white' }}
     >
       <div className={styles.logoWrapper}>
-        {/* {collapsed ? (
-          <Icon as="LogoDogmaSymbol" size={16} />
+        {collapsed ? (
+          <Icon as="Book" size={16} />
         ) : (
-          <Icon as="LogoDogma" className={styles.iconLogoDogma} />
-        )} */}
+          <Flex>
+            <Icon as="Book" className={styles.iconLogoDogma} />
+            <Title>GENTLEMEN</Title>
+          </Flex>
+        )}
       </div>
       <Scroll fullSized>
         <nav className={styles.menuWrapper}>
