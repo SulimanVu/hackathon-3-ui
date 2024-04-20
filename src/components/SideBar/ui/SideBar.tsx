@@ -42,9 +42,9 @@ export const SideBar = memo(({ previousPage, initCollapsed = false, ...props }: 
         {collapsed ? (
           <Icon as="Book" size={16} />
         ) : (
-          <Flex>
-            <Icon as="Book" className={styles.iconLogoDogma} />
-            <Title>GENTLEMEN</Title>
+          <Flex align="center" gap={16}>
+            <Icon as="Book" className={styles.iconLogoDogma} color="#0077FF" />
+            <Text fontSize="base">GENTLEMEN</Text>
           </Flex>
         )}
       </div>
